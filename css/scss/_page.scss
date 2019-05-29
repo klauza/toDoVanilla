@@ -1,3 +1,38 @@
+#main{
+  width: 600px;
+  margin: 100px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 3px;
+}
+
+#todo-list-container{
+  overflow-y: auto;
+  height: 400px;
+}
+
+#new-todo-input {
+  width: 440px;
+  position: relative;
+  display: inline-block;
+}
+#submit-new-todo-btn{
+  float: right;
+  width: 90px;
+}
+#todo-list-container li{
+  cursor: pointer;
+  &:hover{
+    background: rgb(255, 122, 122);
+  }
+}
+
+#reset-storage-button{
+  position: absolute;
+  top: 0; right: 0;
+  margin: 25px;
+}
 ul{
   text-align: center;
 }
