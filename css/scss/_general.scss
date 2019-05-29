@@ -25,7 +25,10 @@
 
 body{
     font-size: 16px;
+    background-image: url('../media/bg.jpg');
     background-color: #747474;
+
+    background-size: cover;
 }
 h1{
   color: $light-green;
