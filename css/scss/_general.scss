@@ -1,0 +1,36 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}  
+
+/*        SCROLLBAR        */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+body{
+    font-size: 16px;
+    background-color: #747474;
+}
+h1{
+  color: $light-green;
+  text-align: center;
+  font-family: $ff-Stencil;
+  
+}
+

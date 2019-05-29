@@ -1,0 +1,11 @@
+ul{
+  text-align: center;
+}
+
+@for $i from 1 through 5{
+  .list-item-#{$i} {
+    color: rgba(104, 4, 34, 0.788);
+    font-size: 16px + $i*2;
+    filter: blur(0px + $i/3);
+  }
+}
