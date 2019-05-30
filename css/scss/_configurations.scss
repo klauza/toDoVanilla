@@ -1,7 +1,6 @@
 // Colors
-$even-todo: #b3b3b3;
+$even-todo: #d3d3d3;
 $hover-todo: #ff7a7a;
-
 
 
 // Fonts
@@ -11,7 +10,7 @@ $ff-Stencil: 'Stardos Stencil', cursive;
 
 
 // media query: @include mediaQ{ ... }
-@mixin mediaQ($width: 60em){ //960px
+@mixin mediaQ($width: 45em){ //720px
   @media(max-width: $width){
       @content;
   }

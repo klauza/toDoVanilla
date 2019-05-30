@@ -4,16 +4,21 @@
     padding: 0
 }  
 
-
+html{
+  height: 100%;
+}
 body{
+  height: auto;
     font-size: 16px;
-    background-image: url('../media/bg.jpg');
-    background-color: #747474;
+    //background-image: url('../media/bg.jpg');
+    //background-color: #747474;
     background-size: cover;
+
+    background-image: url("../media/bg.jpg");
 }
 
 h1{
-  color: $light-green;
+  color: white;
   text-align: center;
   font-family: $ff-Stencil;
 }

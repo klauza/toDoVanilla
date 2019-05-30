@@ -4,31 +4,17 @@
   margin: 0;
   padding: 0; }
 
-/*        SCROLLBAR        */
-/* width */
-::-webkit-scrollbar {
-  width: 10px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; }
+html {
+  height: 100%; }
 
 body {
+  height: auto;
   font-size: 16px;
-  background-image: url("../media/bg.jpg");
-  background-color: #747474;
-  background-size: cover; }
+  background-size: cover;
+  background-image: url("../media/bg.jpg"); }
 
 h1 {
-  color: #8de691;
+  color: white;
   text-align: center;
   font-family: "Stardos Stencil", cursive; }
 
@@ -37,7 +23,7 @@ h1 {
   margin: 100px auto 0 auto;
   background-color: rgba(255, 255, 255, 0.15);
   padding: 25px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 0px 15px 16px -6px rgba(0, 0, 0, 0.75);
   border-radius: 3px; }
 
 ul {
@@ -47,7 +33,7 @@ ul {
   overflow-y: auto;
   height: 400px; }
   #todo-list-container li:nth-child(even) {
-    background: #b3b3b3; }
+    background: #d3d3d3; }
   #todo-list-container li {
     margin-bottom: 5px;
     cursor: pointer; }
@@ -69,3 +55,20 @@ ul {
   top: 0;
   right: 0;
   margin: 25px; }
+
+@media (max-width: 45em) {
+  #main {
+    width: 95%; }
+  #todo-list-container {
+    height: 55vh; }
+  #new-todo-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; }
+  #submit-new-todo-btn {
+    display: grid;
+    justify-self: center;
+    width: 130px;
+    margin: 0 auto 10px auto;
+    float: unset;
+    text-align: center; } }
