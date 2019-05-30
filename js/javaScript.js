@@ -46,8 +46,11 @@ const initClickListeners = () => {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => displayTodos());
-
+//display todos and focus input on DOM load
+document.addEventListener("DOMContentLoaded", () => {
+  displayTodos();
+  document.getElementById("new-todo-input").focus();
+})
 
 //submit button
 document.getElementById("submit-new-todo-btn").addEventListener("click", ($event) => {
@@ -57,6 +60,14 @@ document.getElementById("submit-new-todo-btn").addEventListener("click", ($event
     displayTodos();
   }
 })
+
+//submit button on enter hit
+document.getElementById("new-todo-input").addEventListener("keyup", function($event) {
+  if ($event.keyCode === 13) {
+    document.getElementById("submit-new-todo-btn").click();
+  }
+});
+
 
 //reset local storage button
 document.getElementById("reset-storage-button").addEventListener("click", ($event) => {

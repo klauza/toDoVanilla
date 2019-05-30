@@ -1,13 +1,13 @@
 // Colors
-$white: #fff;
-$black: #000;
-$light-green: rgb(141, 230, 145);
+$even-todo: #b3b3b3;
+$hover-todo: #ff7a7a;
 
 
-// Font
-@import url('https://fonts.googleapis.com/css?family=Stencil');
 
-$ff-Stencil: 'Stencil', sans-serif;
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap');
+
+$ff-Stencil: 'Stardos Stencil', cursive;
 
 
 // media query: @include mediaQ{ ... }

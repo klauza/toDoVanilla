@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Stencil");
+@import url("https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +30,7 @@ body {
 h1 {
   color: #8de691;
   text-align: center;
-  font-family: "Stencil", sans-serif; }
+  font-family: "Stardos Stencil", cursive; }
 
 #main {
   width: 600px;
@@ -40,59 +40,32 @@ h1 {
   box-shadow: 2px 2px 5px black;
   border-radius: 3px; }
 
+ul {
+  text-align: center; }
+
 #todo-list-container {
   overflow-y: auto;
   height: 400px; }
+  #todo-list-container li:nth-child(even) {
+    background: #b3b3b3; }
+  #todo-list-container li {
+    margin-bottom: 5px;
+    cursor: pointer; }
+    #todo-list-container li:hover {
+      background: #ff7a7a; }
 
 #new-todo-input {
   width: 440px;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 25px; }
 
 #submit-new-todo-btn {
   float: right;
   width: 90px; }
-
-#todo-list-container li {
-  cursor: pointer; }
-  #todo-list-container li:hover {
-    background: #ff7a7a; }
 
 #reset-storage-button {
   position: absolute;
   top: 0;
   right: 0;
   margin: 25px; }
-
-ul {
-  text-align: center; }
-
-.list-item-1 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 18px;
-  -webkit-filter: blur(0.33333px);
-          filter: blur(0.33333px); }
-
-.list-item-2 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 20px;
-  -webkit-filter: blur(0.66667px);
-          filter: blur(0.66667px); }
-
-.list-item-3 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 22px;
-  -webkit-filter: blur(1px);
-          filter: blur(1px); }
-
-.list-item-4 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 24px;
-  -webkit-filter: blur(1.33333px);
-          filter: blur(1.33333px); }
-
-.list-item-5 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 26px;
-  -webkit-filter: blur(1.66667px);
-          filter: blur(1.66667px); }
