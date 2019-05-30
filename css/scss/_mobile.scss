@@ -1,0 +1,25 @@
+@include mediaQ{  
+  #main{
+    width: 95%;
+  }
+  #todo-list-container{
+    height: 55vh;
+  }
+
+  // INPUT - SUBMIT BUTTON - STORAGE BUTTON
+  #new-todo-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #submit-new-todo-btn{
+    display: grid;
+    justify-self: center;
+    width: 130px;
+    margin: 0 auto 10px auto;
+    float: unset;
+    text-align: center;
+  }
+
+}

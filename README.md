@@ -1,2 +1,2 @@
-#run gulp watch <br/>
-for sass compiler and browser-sync
+run **gulp watch** for sass compile and browser-sync<br/>
+> Project inspired by https://www.portexe.com/

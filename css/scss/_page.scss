@@ -3,44 +3,49 @@
   margin: 100px auto 0 auto;
   background-color: rgba(255, 255, 255, 0.15);
   padding: 25px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 0px 15px 16px -6px rgba(0,0,0,0.75);
   border-radius: 3px;
+}
+
+
+ul{
+  text-align: center;
 }
 
 #todo-list-container{
   overflow-y: auto;
   height: 400px;
+
+  li:nth-child(even){
+    background: $even-todo;
+  }
+
+  li{
+    margin-bottom: 5px;
+    cursor: pointer;
+    &:hover{
+      background: $hover-todo;
+    }
+  }
+
 }
 
+
+// INPUT - SUBMIT BUTTON - STORAGE BUTTON
 #new-todo-input {
   width: 440px;
   position: relative;
   display: inline-block;
+  margin-bottom: 25px;
 }
+
 #submit-new-todo-btn{
   float: right;
   width: 90px;
-}
-#todo-list-container li{
-  cursor: pointer;
-  &:hover{
-    background: rgb(255, 122, 122);
-  }
 }
 
 #reset-storage-button{
   position: absolute;
   top: 0; right: 0;
   margin: 25px;
-}
-ul{
-  text-align: center;
-}
-
-@for $i from 1 through 5{
-  .list-item-#{$i} {
-    color: rgba(104, 4, 34, 0.788);
-    font-size: 16px + $i*2;
-    filter: blur(0px + $i/3);
-  }
 }

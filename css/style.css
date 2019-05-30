@@ -1,62 +1,54 @@
-@import url("https://fonts.googleapis.com/css?family=Stencil");
+@import url("https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-/*        SCROLLBAR        */
-/* width */
-::-webkit-scrollbar {
-  width: 10px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; }
+html {
+  height: 100%; }
 
 body {
+  height: auto;
   font-size: 16px;
-  background-image: url("../media/bg.jpg");
-  background-color: #747474;
-  background-size: cover; }
+  background-size: cover;
+  background-image: url("../media/bg.jpg"); }
 
 h1 {
-  color: #8de691;
+  color: white;
   text-align: center;
-  font-family: "Stencil", sans-serif; }
+  font-family: "Stardos Stencil", cursive; }
 
 #main {
   width: 600px;
   margin: 100px auto 0 auto;
   background-color: rgba(255, 255, 255, 0.15);
   padding: 25px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 0px 15px 16px -6px rgba(0, 0, 0, 0.75);
   border-radius: 3px; }
+
+ul {
+  text-align: center; }
 
 #todo-list-container {
   overflow-y: auto;
   height: 400px; }
+  #todo-list-container li:nth-child(even) {
+    background: #d3d3d3; }
+  #todo-list-container li {
+    margin-bottom: 5px;
+    cursor: pointer; }
+    #todo-list-container li:hover {
+      background: #ff7a7a; }
 
 #new-todo-input {
   width: 440px;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 25px; }
 
 #submit-new-todo-btn {
   float: right;
   width: 90px; }
-
-#todo-list-container li {
-  cursor: pointer; }
-  #todo-list-container li:hover {
-    background: #ff7a7a; }
 
 #reset-storage-button {
   position: absolute;
@@ -64,35 +56,19 @@ h1 {
   right: 0;
   margin: 25px; }
 
-ul {
-  text-align: center; }
-
-.list-item-1 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 18px;
-  -webkit-filter: blur(0.33333px);
-          filter: blur(0.33333px); }
-
-.list-item-2 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 20px;
-  -webkit-filter: blur(0.66667px);
-          filter: blur(0.66667px); }
-
-.list-item-3 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 22px;
-  -webkit-filter: blur(1px);
-          filter: blur(1px); }
-
-.list-item-4 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 24px;
-  -webkit-filter: blur(1.33333px);
-          filter: blur(1.33333px); }
-
-.list-item-5 {
-  color: rgba(104, 4, 34, 0.788);
-  font-size: 26px;
-  -webkit-filter: blur(1.66667px);
-          filter: blur(1.66667px); }
+@media (max-width: 45em) {
+  #main {
+    width: 95%; }
+  #todo-list-container {
+    height: 55vh; }
+  #new-todo-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; }
+  #submit-new-todo-btn {
+    display: grid;
+    justify-self: center;
+    width: 130px;
+    margin: 0 auto 10px auto;
+    float: unset;
+    text-align: center; } }
